@@ -1,5 +1,5 @@
 # Intro
-irst configure the makefile then run it.
+first configure the makefile then run it.
 This makefile is intended for Linux.
 
 
