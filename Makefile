@@ -42,3 +42,9 @@ run:
 
 clean:
 	rm -rf ./$(EXTENSION_NAME)
+	
+unxpi:
+# you need to place .xpi file (plugin) in the main directory, where the makefile is placed
+	cp *.xpi unpacked-plugin.zip
+	unzip unpacked-plugin.zip -d unpacked-plugin
+	rm unpacked-plugin.zip
