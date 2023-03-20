@@ -48,3 +48,8 @@ unxpi:
 	cp *.xpi unpacked-plugin.zip
 	unzip unpacked-plugin.zip -d unpacked-plugin
 	rm unpacked-plugin.zip
+
+find:
+# finding location of .xpi installed in firefox
+# under the assumption that firefox is installed in ~/.mozilla/firefox
+	cd ~/.mozilla/firefox && find . -name "*.xpi" -type f
